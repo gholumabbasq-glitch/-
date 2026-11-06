@@ -16,7 +16,7 @@ jalaliDatepicker.startWatch();
 
 let editIndex = null;
 
-const expens = JSON.parse(localStorage.getItem("expenses")) || [];
+const expens = JSON.parse(localStorage.getItem("expenses-af")) || [];
 
 // ثبت و ویرایش هزینه
 function get(event) {
@@ -124,7 +124,7 @@ function updateMonthlyExpenses() {
 
 // ذخیره هزینه‌ها
 function saveExpenses() {
-  localStorage.setItem("expenses", JSON.stringify(expens));
+  localStorage.setItem("expenses-af", JSON.stringify(expens));
 }
 
 // ساخت یک سطر برای هر هزینه
